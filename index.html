@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VECTOR//STRIKE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Vector Strike inicio"><span class="brand-mark">V/</span><span>VECTOR<br /><b>STRIKE</b></span></a>
+        <div class="system-status"><i></i> SERVIDORES ESTABLES <span>DX10+ READY</span></div>
+        <button class="profile" aria-label="Perfil de jugador">RZ <b>16</b></button>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">TEMPORADA 01 · PROTOCOLO FANTASMA</p>
+          <h1>DISPARA<br /><em>PRIMERO.</em></h1>
+          <p class="intro">Un shooter táctico competitivo, diseñado desde cero para hardware modesto. Entra, coordina y domina el objetivo.</p>
+          <div class="hero-actions">
+            <button class="primary" id="playButton"><span>▶</span> JUGAR AHORA</button>
+            <button class="ghost" id="briefingButton">VER INFORME <span>→</span></button>
+          </div>
+          <div class="numbers"><div><b>02</b><span>MAPAS ACTIVOS</span></div><div><b>04</b><span>OPERADORES</span></div><div><b>12</b><span>ARMAS</span></div></div>
+        </div>
+        <div class="operator-art" aria-hidden="true">
+          <div class="sun"></div><div class="grid"></div><div class="tower t1"></div><div class="tower t2"></div>
+          <div class="soldier"><div class="head"></div><div class="visor"></div><div class="body"></div><div class="arm"></div><div class="rifle"></div><div class="leg left"></div><div class="leg right"></div></div>
+          <p class="operator-tag">OPERADOR // 04<br /><b>APEX</b></p>
+        </div>
+      </section>
+
+      <section class="content-grid" id="briefing">
+        <div class="section-heading"><p class="eyebrow">ZONAS DE COMBATE</p><h2>ELIGE TU <em>TERRENO.</em></h2></div>
+        <div class="map-cards">
+          <article class="map-card refinery active" data-map="Refinería K-8"><div class="map-image"><span>01</span><div class="buildings"></div></div><div class="map-copy"><p>ESCARAMUZA · 5v5</p><h3>REFINERÍA K-8</h3><span>Complejo industrial</span><button>SELECCIONAR <b>→</b></button></div></article>
+          <article class="map-card coast" data-map="Costa Nula"><div class="map-image"><span>02</span><div class="coastline"></div></div><div class="map-copy"><p>CONTROL · 6v6</p><h3>COSTA NULA</h3><span>Puerto abandonado</span><button>SELECCIONAR <b>→</b></button></div></article>
+        </div>
+      </section>
+
+      <section class="loadout">
+        <div class="section-heading"><p class="eyebrow">ARMA TU EQUIPO</p><h2>CADA TIRO <em>CUENTA.</em></h2></div>
+        <div class="weapon-display"><div class="weapon-info"><span id="weaponType">FUSIL DE ASALTO</span><h3 id="weaponName">AR-77 <em>VÍBORA</em></h3><p id="weaponDesc">Control estable y daño fiable para dominar cualquier distancia.</p><div class="weapon-stats"><span>DAÑO <b id="damage">74</b></span><span>CADENCIA <b id="rate">68</b></span><span>CONTROL <b id="control">82</b></span></div></div><div class="gun-art" id="gunArt"><div class="stock"></div><div class="body-gun"></div><div class="barrel"></div><div class="sight"></div><div class="mag"></div></div></div>
+        <div class="weapon-tabs"><button class="selected" data-weapon="0">01 <b>AR-77</b></button><button data-weapon="1">02 <b>NEXUS-9</b></button><button data-weapon="2">03 <b>HMR SABLE</b></button></div>
+      </section>
+
+      <section class="operators"><div class="section-heading"><p class="eyebrow">OPERADORES</p><h2>HABILIDAD ES <em>PODER.</em></h2></div><div class="operator-list"><article><span class="operator-no">01</span><h3>VANTA</h3><p>INCURSOR</p><b>DESPLAZAMIENTO SOMBRA</b></article><article><span class="operator-no">02</span><h3>TORCH</h3><p>ASALTO</p><b>CARGA INCENDIARIA</b></article><article><span class="operator-no">03</span><h3>LYNX</h3><p>RECONOCIMIENTO</p><b>PULSO DE RASTREO</b></article><article><span class="operator-no">04</span><h3>APEX</h3><p>CONTROL</p><b>MURO CINÉTICO</b></article></div></section>
+      <footer><span>VECTOR//STRIKE © 2024</span><span>HECHO PARA RENDIR · DX10+</span></footer>
+    </main>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
