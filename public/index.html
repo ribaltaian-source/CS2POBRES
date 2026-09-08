@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08111d"><title>LAN Strike Lite</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main id="app">
+    <section id="lobby" class="panel">
+      <p class="eyebrow">SERVIDOR LOCAL · 1V1</p><h1>LAN STRIKE <em>LITE</em></h1>
+      <p class="intro">Shooter táctico de sala privada. Comparte esta misma dirección sólo con dispositivos de tu Wi-Fi.</p>
+      <label>Nombre<input id="name" maxlength="16" value="Agente" autocomplete="nickname"></label>
+      <div class="choices"><label>Mapa<select id="map"><option value="dockyard">Astillero</option><option value="solar">Patio solar</option><option value="metro">Metro</option></select></label><label>Operador<select id="hero"><option value="scout">Explorador · impulso</option><option value="medic">Médico · cura</option><option value="engineer">Ingeniero · escudo</option></select></label><label>Arma<select id="weapon"><option value="rifle">Fusil</option><option value="smg">Subfusil</option><option value="pistol">Pistola</option></select></label></div>
+      <button id="join">Entrar en combate</button><p id="connect" class="muted">Conectando al servidor local…</p>
+      <div class="rules"><span>WASD / flechas: moverse</span><span>Ratón o toque: apuntar y disparar</span><span>Q: habilidad</span></div>
+    </section>
+    <section id="game" hidden>
+      <canvas id="arena" width="1200" height="700"></canvas>
+      <header><strong id="mapName">ASTILLERO</strong><span id="score">0 — 0</span><span id="status">Esperando rival</span></header>
+      <aside id="hud"><div id="health">100</div><div id="ammo">25</div><button id="skill">HABILIDAD <small>Q</small></button></aside>
+      <button id="addBot">AÑADIR BOT</button><p id="toast"></p>
+      <div id="touch"><div class="pad"><button data-key="up">▲</button><button data-key="left">◀</button><button data-key="down">▼</button><button data-key="right">▶</button></div><button id="touchFire">DISPARAR</button></div>
+    </section>
+  </main><script src="/game.js"></script>
+</body></html>
